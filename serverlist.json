@@ -1,0 +1,220 @@
+{
+	"servers": [
+		{
+			"country": "US",
+			"country_name": "Atlanta",
+			"alias_name": "Atlanta2",
+			"host": "167.88.63.47",
+			"password": "treeup123",
+			"load": 968
+		},
+		{
+			"country": "US",
+			"country_name": "Atlanta",
+			"alias_name": "Atlanta5",
+			"host": "172.111.36.103",
+			"password": "treeup123",
+			"load": 970
+		},
+		{
+			"country": "US",
+			"country_name": "Atlanta",
+			"alias_name": "Atlanta4",
+			"host": "167.88.63.39",
+			"password": "treeup123",
+			"load": 1027
+		},
+		{
+			"country": "US",
+			"country_name": "Atlanta",
+			"alias_name": "Atlanta1",
+			"host": "172.111.36.243",
+			"password": "treeup123",
+			"load": 1033
+		},
+		{
+			"country": "US",
+			"country_name": "Atlanta",
+			"alias_name": "Atlanta3",
+			"host": "167.88.63.99",
+			"password": "treeup123",
+			"load": 1038
+		},
+		{
+			"country": "US",
+			"country_name": "Atlanta2",
+			"alias_name": "Atlanta8",
+			"host": "38.121.43.5",
+			"password": "treeup123",
+			"load": 223
+		},
+		{
+			"country": "US",
+			"country_name": "Atlanta2",
+			"alias_name": "Atlanta7",
+			"host": "38.121.43.159",
+			"password": "treeup123",
+			"load": 231
+		},
+		{
+			"country": "US",
+			"country_name": "Atlanta2",
+			"alias_name": "Atlanta9",
+			"host": "38.121.43.221",
+			"password": "treeup123",
+			"load": 243
+		},
+		{
+			"country": "US",
+			"country_name": "Atlanta2",
+			"alias_name": "Atlanta10",
+			"host": "38.121.43.108",
+			"password": "treeup123",
+			"load": 249
+		},
+		{
+			"country": "US",
+			"country_name": "Atlanta2",
+			"alias_name": "Atlanta6",
+			"host": "38.121.43.239",
+			"password": "treeup123",
+			"load": 252
+		},
+		{
+			"country": "AT",
+			"country_name": "Austria",
+			"alias_name": "Austria1",
+			"host": "185.183.107.142",
+			"password": "treeup123",
+			"load": 1150
+		},
+		{
+			"country": "BE",
+			"country_name": "Belgium2",
+			"alias_name": "Belgium9",
+			"host": "37.120.143.118",
+			"password": "treeup123",
+			"load": 1776
+		},
+		{
+			"country": "BR",
+			"country_name": "Brazil",
+			"alias_name": "Brazil5",
+			"host": "146.70.163.222",
+			"password": "treeup123",
+			"load": 1297
+		},
+		{
+			"country": "BR",
+			"country_name": "Brazil",
+			"alias_name": "Brazil4",
+			"host": "146.70.163.6",
+			"password": "treeup123",
+			"load": 1316
+		},
+		{
+			"country": "BR",
+			"country_name": "Brazil",
+			"alias_name": "Brazil2",
+			"host": "45.133.180.222",
+			"password": "treeup123",
+			"load": 1596
+		},
+		{
+			"country": "BR",
+			"country_name": "Brazil",
+			"alias_name": "Brazil3",
+			"host": "188.241.177.186",
+			"password": "treeup123",
+			"load": 1603
+		}
+	],
+	"default_services": [
+		{
+			"id": "ikev2_v1",
+			"ports": [
+				4500
+			]
+		},
+		{
+			"id": "openvpn_v1_tcp",
+			"ports": [
+				444,
+				8081,
+				443
+			]
+		},
+		{
+			"id": "openvpn_v1_udp",
+			"ports": [
+				800,
+				110
+			]
+		},
+		{
+			"id": "super_v1",
+			"ports": [
+				9897
+			]
+		}
+	],
+	"modes": [
+		{
+			"key": "auto",
+			"title": "Auto",
+			"services": [
+				"ikev2_v1",
+				"openvpn_v1_udp",
+				"openvpn_v1_tcp",
+				"super_v1"
+			]
+		},
+		{
+			"key": "ikev2",
+			"title": "IKEv2",
+			"services": [
+				"ikev2_v1"
+			]
+		},
+		{
+			"key": "super",
+			"title": "Super",
+			"services": [
+				"super_v1"
+			]
+		},
+		{
+			"key": "openvpn_udp",
+			"title": "OpenVPN (UDP)",
+			"services": [
+				"openvpn_v1_udp"
+			]
+		},
+		{
+			"key": "openvpn_tcp",
+			"title": "OpenVPN (TCP)",
+			"services": [
+				"openvpn_v1_tcp"
+			]
+		},
+		{
+			"key": "openvpn",
+			"title": "OpenVPN",
+			"services": [
+				"openvpn_v1_tcp",
+				"openvpn_v1_udp"
+			]
+		}
+	],
+	"_meta": {
+		"config_version": "71",
+		"rules_version": "160",
+		"generation_ts": 1700926636,
+		"generation_conditions": {
+			"platform": "android",
+			"region": "UA",
+			"vip": true,
+			"app": "com.free.vpn.super.hotspot.open"
+		}
+	}
+}
